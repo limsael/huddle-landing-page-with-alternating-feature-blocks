@@ -1,0 +1,99 @@
+@media screen and (min-width: 768px) {
+  .header {
+    background:
+      url(../images/bg-hero-desktop.svg) fixed,
+      $very-pale-cyan;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1.5rem;
+
+    &__intro {
+      flex-direction: row;
+      gap: 2rem;
+
+      &-title {
+        font-size: 2.25rem;
+      }
+
+      &-title,
+      &-description {
+        text-align: left;
+      }
+
+      &-btn {
+        margin-inline-start: 0;
+        translate: 0;
+      }
+    }
+  }
+
+  .features {
+    padding: 1.5rem 3.5rem;
+    .feature {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 5rem;
+      padding-inline-start: 5rem;
+    }
+
+    &__communities,
+    &__conversations,
+    &__resources {
+      &-title,
+      &-description {
+        text-align: left;
+      }
+    }
+
+    &__image {
+      order: 5;
+    }
+  }
+
+  .footer {
+    padding-inline: 5rem;
+
+    &__action {
+      padding-inline: 1.125rem;
+
+      &-title {
+        font-size: 1.125rem;
+      }
+    }
+
+    &__data {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__left {
+      max-width: 375px;
+    }
+
+    &__right {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2.5rem;
+    }
+
+    &__copyright-text {
+      text-align: right;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    padding: 1.5rem 2.5rem;
+
+    &__intro {
+      gap: 3rem;
+
+      &-title {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}

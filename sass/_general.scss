@@ -1,0 +1,48 @@
+$very-pale-cyan: hsl(193, 100%, 96%);
+$very-dark-cyan: hsl(192, 100%, 9%);
+$grayish-blue: hsl(208, 11%, 55%);
+$grayish-blue-alpha: hsla(208, 11%, 55%, 0.5);
+$pink: hsl(322, 100%, 66%);
+$pink-alpha: hsla(322, 100%, 66%, 0.982);
+$white: hsl(0, 0%, 100%);
+$light-gray: hsla(0, 0%, 98%);
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400..700&family=Poppins:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+main {
+  margin-block-start: 3.5rem;
+}
+
+h1,
+h2 {
+  font-family: "Poppins", sans-serif;
+}
+
+.btn {
+  background-color: $pink;
+  color: $white;
+  text-decoration: none;
+  padding: 0.5rem 0.9rem;
+  border-radius: 1.15rem;
+  display: inline-block;
+  margin: 0.95rem auto;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: $pink-alpha;
+  }
+}
+
+p {
+  font-size: 1.125rem;
+}

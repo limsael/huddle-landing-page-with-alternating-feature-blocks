@@ -1,0 +1,60 @@
+.header {
+  background:
+    url(../images/bg-hero-mobile.svg) fixed,
+    $very-pale-cyan;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &__link {
+    text-decoration: none;
+    background-color: $white;
+    color: $very-dark-cyan;
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1.21rem;
+    box-shadow: 0 0 0.4rem $grayish-blue-alpha;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $grayish-blue;
+    }
+  }
+
+  &__intro {
+    display: flex;
+    flex-direction: column;
+    gap: 1.15rem;
+    padding: 0.95rem;
+    margin-block-start: 2rem;
+
+    &-title {
+      text-align: center;
+      margin-block-end: 1rem;
+    }
+
+    &-description {
+      color: $grayish-blue;
+      text-align: center;
+      margin-block-end: 1rem;
+    }
+
+    &-btn {
+      margin-block: 1.25rem;
+      translate: 50%;
+    }
+
+    &-img {
+      width: 100%;
+    }
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.95rem;
+  }
+
+  &__logo {
+    width: 100px;
+  }
+}

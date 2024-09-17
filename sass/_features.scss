@@ -1,0 +1,35 @@
+.features {
+  padding: 3rem 1rem;
+  margin-block: 4rem;
+  display: grid;
+  gap: 1.5rem;
+
+  .feature {
+    background-color: $white;
+    padding: 2rem;
+    display: grid;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    border-radius: 0.95rem;
+    box-shadow: 0 0 0.4rem $grayish-blue-alpha;
+
+    &__img {
+      width: 100%;
+    }
+  }
+
+  &__communities,
+  &__conversations,
+  &__resources {
+    &-title {
+      text-align: center;
+      margin-block-end: 1.25rem;
+    }
+
+    &-description {
+      color: $grayish-blue;
+      text-align: center;
+    }
+  }
+}
